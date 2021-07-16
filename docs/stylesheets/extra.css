@@ -1,0 +1,25 @@
+.md-typeset__table {
+    min-width: 100%;
+ }
+ 
+ .md-typeset table:not([class]) {
+     display: table;
+ }
+
+ table{
+    width:100%;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: bold;
+}
+.md-typeset h3 {
+    font-weight: 600;
+    color:grey;
+  }
+  .md-typeset h4 {
+    font-weight: 600;
+    color:grey;
+  }
+ 

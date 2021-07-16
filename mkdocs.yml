@@ -1,0 +1,57 @@
+site_name: Documentação API Safer
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css      
+
+
+nav:
+  - Intro: intro.md
+  - Autenticação: auth.md
+  - Redes: redes.md
+  - Emergências: redes.md
+  # - Emergências: redes.md
+
+
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  palette:
+    primary: blue grey
+
+  # features:
+  #   - navigation.expand
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+
+#  Na Documentacao referente a cada app: 
+#  - Criar tabela que indica cada branch do github ( data de criacao, data de ultima modificacao, ultimo merge realizado )
+#  - Criar tabela que representa as versoes do app ( descricao, data, etc )
+
+# ---------------------------
+#  Organizar planejamento no notion ( Sprints, requisitos do sistema, versoes, etc / KANBAN para cada area  )
