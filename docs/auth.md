@@ -1,4 +1,7 @@
 
+
+<!-- COMMIT MARKER -->
+
 Modulo destinado a todas as requisições relacionadas ao processo de autenticação. ( Cadastro, login, logout, etc)
 
 ---
