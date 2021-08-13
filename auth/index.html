@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../assets/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.11">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.3754935a.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -44,6 +44,8 @@
     
     
       
+
+
     
     
   </head>
@@ -296,6 +298,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cadastro-de-usuarios" class="md-nav__link">
+    Cadastro de usuários
+  </a>
+  
+    <nav class="md-nav" aria-label="Cadastro de usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inform-phone-number" class="md-nav__link">
+    Inform phone number
+  </a>
+  
+    <nav class="md-nav" aria-label="Inform phone number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros_1" class="md-nav__link">
+    Parametros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization_1" class="md-nav__link">
+    Authorization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -328,6 +384,66 @@
   
     <li class="md-nav__item">
       <a href="../redes.md" class="md-nav__link">
+        Emergências
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null.md" class="md-nav__link">
+        Contatos de emergência
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null.md" class="md-nav__link">
+        Notificações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null.md" class="md-nav__link">
+        Profile
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../null.md" class="md-nav__link">
         Emergências
       </a>
     </li>
@@ -425,6 +541,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#cadastro-de-usuarios" class="md-nav__link">
+    Cadastro de usuários
+  </a>
+  
+    <nav class="md-nav" aria-label="Cadastro de usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inform-phone-number" class="md-nav__link">
+    Inform phone number
+  </a>
+  
+    <nav class="md-nav" aria-label="Inform phone number">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parametros_1" class="md-nav__link">
+    Parametros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization_1" class="md-nav__link">
+    Authorization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    Example Request
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-response" class="md-nav__link">
+    Example Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -440,7 +610,9 @@
                 
                   <h1>Autenticação</h1>
                 
-                <p>Modulo destinado a todas as requisições relacionadas ao processo de autenticação. ( Cadastro, login, logout, etc)</p>
+                <!-- COMMIT MARKER -->
+
+<p>Modulo destinado a todas as requisições relacionadas ao processo de autenticação. ( Cadastro, login, logout, etc)</p>
 <hr />
 <!---=========================================== LOGIN ===========================================--->
 <h2 id="login">Login</h2>
@@ -583,6 +755,153 @@
 6:"app_id" -> 2 
 "login.php"
 -->
+
+<!---=========================================== CADASTRO ===========================================--->
+<p><br/></p>
+<hr />
+<h2 id="cadastro-de-usuarios">Cadastro de usuários</h2>
+<p>O processo de cadastro é baseado na confirmação do número de celular, via SMS. Sendo dividido em 3 etapas: </p>
+<ul>
+<li><strong>Etapa 1 - Informar o número do celular.</strong> ( Processado via requisição á API )
+  Deve ser feita uma requisição ao servidor, passando o número de celular informado pelo usuário. Essa requisição irá retornar o PIN Code, que será usado no próximo passo. O pin code deve ser salvo localmente no front-end, para posteriormente ser comparado ao código informado pelo usuário. </li>
+</ul>
+<p></br></p>
+<ul>
+<li><strong>Etapa 2 - Confirmar PIN Code recebido via sms.</strong> ( Processado via frontend )
+  Essa etapa não envolve requisição a API. A confirmação é feita pelo front-end, da seguinte forma: O usuário deve informar o código recebido via SMS, e o sistema deve verificar se esse código bate com código recebido na resposta da requisição da etapa 1. </li>
+</ul>
+<p></br></p>
+<ul>
+<li><strong>Etapa 3 - Informar dados do usuário.</strong> ( Processado via requisição á API )
+   Requisição ao servidor, passando os dados do usuário ( User, senha, etc ). </li>
+</ul>
+<hr />
+<!-----------------------  INFORM PHONE NUMBER ----------------------->
+
+<h3 id="inform-phone-number"><a href=""><img alt="Flattr this git repo" src="https://img.shields.io/badge/-POST-orange" /></a> Inform phone number</h3>
+<ul>
+<li><strong>Endpoint:</strong> https://www.segcontrole.com.br/safer/v1/login.php</li>
+</ul>
+<!-- [![Flattr this git repo](https://img.shields.io/badge/-POST-orange)]() -->
+<!-------- PARAMETERS -------->
+
+<h4 id="parametros_1">Parametros</h4>
+<table>
+   <!-- HEADER -->
+   <thead>
+    <tr>
+      <th scope="col">Parametro</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Descrição</th>
+    </tr>
+  </thead>
+    </tr>
+  <!---- DATA --->
+  <tbody>
+    <!---->
+    <tr>
+      <td >usuario</td>
+      <td>STRING</td>
+      <td>
+      <b>Obrigatório</b> </br>
+      Usuário utilizado para fazer o acesso(login). Nessa caso, o parametro usuario corresponde ao numero de celular usado no cadastro.</td>
+    </tr>
+    <!---->
+    <tr>
+      <td >senha</td>
+      <td>STRING</td>
+      <td>        <b>Obrigatório</b> </br>Senha de acesso do usuário.</td>
+    </tr>
+    <!---->
+    <tr>
+      <td >token_push</td>
+      <td>STRING</td>
+      <td>
+      <b>Obrigatório</b> </br>      
+      Token push gerado pelo firebase messaging. Utilizado para enviar notificações push para o usuário.</td>
+    </tr>
+    <!---->
+    <tr>
+      <td >token_voip</td>
+      <td>STRING</td>
+      <td>  
+      <b>Obrigatório</b> </br>      
+      Token de chamadas VOIP</td>
+    </tr>
+    <!---->
+    <tr>
+      <td >so</td>
+      <td>STRING</td>
+      <td>
+      <b>Obrigatório</b> </br>
+      Indica qual o sistema operacional em que o app esta instalado.</br>
+      <b>Valores:</b> IOS / ANDROID 
+      </td>
+    </tr>    
+    <!---->
+    <tr>
+      <td >so_ver</td>
+      <td>STRING</td>
+      <td>
+      <b>Obrigatório</b> </br>
+      Indica qual a versão do sistema operacional. 
+      </td>
+    </tr>  
+    <!---->
+    <tr>
+      <td >app_id</td>
+      <td>INT</td>
+      <td>
+      <b>Obrigatório</b> </br>
+      ID do aplicativo. ( Cada aplicativo da familia Safer tem seu ID unico )
+      </td>
+    </tr>    
+  <tbody>
+</table>
+
+<!-------- PARAMETERS -------->
+
+<h4 id="authorization_1">Authorization</h4>
+<p>🔑  &ensp; <strong>Token JWT</strong></p>
+<!-------- PARAMETERS -------->
+
+<h4 id="example-request">Example Request</h4>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Dart</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="n">response</span> <span class="o">=</span> <span class="kd">await</span> <span class="n">dio</span><span class="p">.</span><span class="n">post</span><span class="p">(</span>
+  <span class="s1">&#39;https://www.segcontrole.com.br/safer/v1/login.php&#39;</span><span class="p">,</span>
+  <span class="nl">options:</span> <span class="n">Options</span><span class="p">(</span>
+    <span class="nl">headers:</span> <span class="p">{</span>
+      <span class="s1">&#39;Authorization&#39;</span><span class="o">:</span> <span class="s1">&#39;Bearer &lt;TOKEN JWT&gt;&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">),</span>
+  <span class="nl">data:</span> <span class="p">{</span>
+    <span class="s1">&#39;usuario&#39;</span><span class="o">:</span> <span class="s1">&#39;teste@email.com&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;senha&#39;</span><span class="o">:</span> <span class="s2">&quot;123456&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;token_push&#39;</span><span class="o">:</span> <span class="s2">&quot;&lt;TOKEN PUSH&gt;&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;token_voip&#39;</span><span class="o">:</span> <span class="s2">&quot;&lt;TOKEN VOIP&gt;&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;so&#39;</span><span class="o">:</span> <span class="s2">&quot;IOS&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;so_ver&#39;</span><span class="o">:</span> <span class="s2">&quot;12.5.2&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;app_id&#39;</span><span class="o">:</span> <span class="m">2</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">);</span>
+</code></pre></div>
+</div>
+</div>
+<p><br/></p>
+<h4 id="example-response">Example Response</h4>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">JSON</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;info&quot;</span><span class="p">:</span> <span class="s2">&quot;teste1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">226</span><span class="p">,</span>
+        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;teste1@email.com&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;token&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2YWwiOjE2MjYzNjQ4MTUsImRhdGEiOnsiaWQiOiIyMjYiLCJlbWFpbCI6InRlc3RlMUBlbWFpbC5jb20iLCJjZWxfaWQiOiI1NTkxIiwiYXBwX2lkIjoiMiJ9fQ.u1-pD78xeLpnWcTHIy6rJQIUabsiCYEZnFCJj6mqi0k&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">200</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
                 
               
               
@@ -601,7 +920,8 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../intro/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../intro/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intro" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -637,10 +957,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      <script src="../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>
