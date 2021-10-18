@@ -169,6 +169,125 @@ Requisição utilizada para validar um usuário. Se for bem sucedida, retorna um
 
 
 
+<br/>
+
+---
+
+
+<!---=========================================== CADASTRO ===========================================--->
+##Cadastro
+
+<!----------- INTRO ----------->
+
+###Introdução 
+Requisição utilizada para cadastrar um novo usuário. 
+
+<!---------- REQUEST ---------->
+###Request
+
+- **Endpoint:** https://www.segcontrole.com.br/safer/v1/cadastro.php
+- **Method:** [![Flattr this git repo](https://img.shields.io/badge/-POST-orange)]()
+
+
+<!-------- PARAMETERS -------->
+
+###Parametros
+
+<table>
+   <!-- HEADER -->
+   <thead>
+    <tr>
+      <th scope="col">Parametro</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Descrição</th>
+    </tr>
+  </thead>
+    </tr>
+  <!---- DATA --->
+  <tbody>
+    <!---->
+    <tr>
+      <td ></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!---->
+  <tbody>
+</table>
+
+<!-------- PARAMETERS -------->
+
+###Authorization
+
+🔑  &ensp; **Token JWT**
+
+
+<!-------- PARAMETERS -------->
+
+###Examples 
+
+
+####Request
+=== "Dart"
+
+    ``` dart
+    var response = await dio.post(
+      'https://www.segcontrole.com.br/safer/v1/login.php',
+      options: Options(
+        headers: {
+          'Authorization': 'Bearer <TOKEN JWT>',
+        },
+      ),
+      data: {
+        'usuario': 'teste@email.com',
+        'senha': "123456",
+        'token_push': "<TOKEN PUSH>",
+        'token_voip': "<TOKEN VOIP>",
+        'so': "IOS",
+        'so_ver': "12.5.2",
+        'app_id': 2,
+      },
+    );
+    ```
+
+<br/>
+####Response
+=== "JSON"
+
+    ``` json
+    {
+        "data": {
+            "info": "teste1", 
+            "id": 226,
+            "email": "teste1@email.com", 
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2YWwiOjE2MjYzNjQ4MTUsImRhdGEiOnsiaWQiOiIyMjYiLCJlbWFpbCI6InRlc3RlMUBlbWFpbC5jb20iLCJjZWxfaWQiOiI1NTkxIiwiYXBwX2lkIjoiMiJ9fQ.u1-pD78xeLpnWcTHIy6rJQIUabsiCYEZnFCJj6mqi0k",
+            "code": 200
+        },
+    }
+    ```
+
+###Erros
+
+<table>
+   <!-- HEADER -->
+   <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Descrição</th>
+    </tr>
+  </thead>
+    </tr>
+  <!---- DATA --->
+  <tbody>
+    <!---->
+    <tr>
+      <td >4</td>
+      <td>Usuário ou senha inválido</td>
+    </tr>
+  <tbody>
+</table>
+
+
 
 
 <!-- 0:"usuario" -> "91"
