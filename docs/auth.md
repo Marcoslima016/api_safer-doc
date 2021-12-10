@@ -159,13 +159,30 @@ Requisição utilizada para validar um usuário. Se for bem sucedida, retorna um
     </tr>
   <!---- DATA --->
   <tbody>
-    <!---->
     <tr>
       <td >4</td>
       <td>Usuário ou senha inválido</td>
     </tr>
   <tbody>
+
+  <tbody>
+    <tr>
+      <td >5</td>
+      <td>-</td>
+    </tr>
+  <tbody>
+
+  <tbody>
+    <tr>
+      <td >6</td>
+      <td>-</td>
+    </tr>
+  <tbody>
+
+  <!---->
+  
 </table>
+
 
 
 
