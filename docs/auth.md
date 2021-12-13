@@ -36,7 +36,7 @@ Requisição utilizada para validar um usuário. Se for bem sucedida, retorna um
   <tbody>
     <!---->
     <tr>
-      <td >usuario</td>
+      <td >Usuarios</td>
       <td>STRING</td>
       <td>
       <b>Obrigatório</b> </br>
@@ -137,7 +137,7 @@ Requisição utilizada para validar um usuário. Se for bem sucedida, retorna um
     ``` json
     {
         "data": {
-            "info": "teste1", 
+            "info": "teste2", 
             "id": 226,
             "email": "teste1@email.com", 
             "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ2YWwiOjE2MjYzNjQ4MTUsImRhdGEiOnsiaWQiOiIyMjYiLCJlbWFpbCI6InRlc3RlMUBlbWFpbC5jb20iLCJjZWxfaWQiOiI1NTkxIiwiYXBwX2lkIjoiMiJ9fQ.u1-pD78xeLpnWcTHIy6rJQIUabsiCYEZnFCJj6mqi0k",
